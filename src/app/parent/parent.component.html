@@ -1,0 +1,92 @@
+<div class="page-area container">
+  <h2>buy Products</h2>
+
+  <div class="alert alert-light border d-flex align-items-center" *ngIf="addProduct">
+    <strong class="text-success">{{ addProduct }}</strong> &nbsp; selected And Added in card
+    <button class="btn btn-success" style="margin-left: auto">Checkout</button>
+  </div>
+
+  <hr />
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card" style="width: 15rem">
+        <img
+          style="text-align: center"
+          src="https://tse4.mm.bing.net/th?id=OIP.okPHK-lOk_E5nzOZsGx2dwHaFI&pid=Api&P=0&h=220"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Laptop</h5>
+
+          <button
+            (click)="onSelectProduct('Laptop')"
+            class="nav-link"
+            class="btn btn-secondary"
+          >
+            Select this product
+          </button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 15rem">
+        <img
+          style="text-align: center"
+          src="https://tse4.mm.bing.net/th?id=OIP.okPHK-lOk_E5nzOZsGx2dwHaFI&pid=Api&P=0&h=220"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Mobile</h5>
+
+          <a
+            routerLink="mobile"
+            class="btn btn-secondary"
+            (click)="onSelectProduct('Mobile')"
+            >Select this product</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 15rem">
+        <img
+          style="text-align: center"
+          src="https://tse4.mm.bing.net/th?id=OIP.okPHK-lOk_E5nzOZsGx2dwHaFI&pid=Api&P=0&h=220"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Tv</h5>
+
+          <a
+            routerLink="tv"
+            class="btn btn-secondary"
+            (click)="onSelectProduct('Tv')"
+            >Select this product</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 15rem">
+        <img
+          style="text-align: center"
+          src="https://tse4.mm.bing.net/th?id=OIP.okPHK-lOk_E5nzOZsGx2dwHaFI&pid=Api&P=0&h=220"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Washing Machine</h5>
+
+          <a
+            routerLink="washine-machine"
+            class="btn btn-secondary"
+            (click)="onSelectProduct('Washing Machine')"
+            >Select this product</a>
+        </div>
+      </div>
+    </div>
+    <app-child class="w-100" [productSelected]="productSelectedInput"
+     [dynamicProduct]="dynamicProductInput"
+     (addProduct)="onAddedProduct($event)"></app-child>
+  </div>
+</div>

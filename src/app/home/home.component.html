@@ -1,0 +1,15 @@
+<div class="page">
+  <h2>home</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt inventore
+    mollitia, veniam iusto cum corporis.
+  </p>
+  <div class="products">
+    <ng-container *ngIf="statusOnline">
+      <div *ngFor="let proitem of products">
+        {{ proitem.name }}
+      </div>
+    </ng-container>
+  </div>
+</div>
+      

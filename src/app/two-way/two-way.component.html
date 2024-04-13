@@ -1,0 +1,41 @@
+<h1>two way binding</h1>
+<!-- in twoway binding we have use property binding as well as event binding -->
+<input type="text" value="sipu" [(ngModel)]="username" />
+<!-- we have use squire breaket for proparty binding and 
+    for event binding used circle or paranthis -->
+<p>{{ username }}</p>
+<div class="text-primary">click</div>
+<button class="btn btn-primary">click</button>
+
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>twitter</td>
+        <td>bhjk</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

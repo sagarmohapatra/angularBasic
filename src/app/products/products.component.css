@@ -1,0 +1,11 @@
+.page-area{
+    /* width: 700px; */
+    width: auto;
+    text-align: center;
+
+}
+.card{
+    display: inline-block;
+    margin: 5px 5px 10px 10px;
+    width: 25%;
+}

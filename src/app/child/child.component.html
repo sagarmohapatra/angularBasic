@@ -1,0 +1,7 @@
+<div class="col-md-12 bg-success text-white text-center">
+  <h2 *ngIf="!productSelected">Please select any product</h2>
+  <h2 *ngIf="productSelected">{{ dynamicProduct }} is selected</h2>
+  <button class="btn bg-white text-balck mb-3" (click)="onAddproduct()">
+    Add to card
+  </button>
+</div>

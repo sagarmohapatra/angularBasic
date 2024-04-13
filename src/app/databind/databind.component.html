@@ -1,0 +1,30 @@
+<h2>interpolation binding</h2>
+
+<p>my name is {{Dyname}}</p>
+<br><br>
+{{5+6}}
+<br>
+{{"welcome" + Dyname}}
+
+<br>
+{{Dyname.length}}
+
+<br><br>
+{{Dyname.toUpperCase()}}
+<br>
+
+{{myMethod()}}
+<br><br>
+
+my app status is {{appStatus ? status1:status2}} 
+
+<br><br>
+<h1>Property binding</h1>
+
+<!-- <input type="text" [disabled]="!enable" name="" id="" [value]="Dyname"> -->
+
+<br><br>
+<input type="text" name="" [hidden]="enable" id="" bind-value="Dyname">
+<!-- disable and hidden propery we have required proparty  binding it is not used interpolation  -->
+<br><br>
+<input type="text" [disabled]="enable" name="" id="" [value]="appStatus ? status1:status2">
